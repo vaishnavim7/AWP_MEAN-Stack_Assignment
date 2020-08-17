@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8" >
+        <!-- The charset attribute specifies the character encoding for the HTML document. -->
+        
+        <meta name="viewport" content= "width = device-width, height = device-height, initial-scale = 1.0">
+        <!-- The viewport is the user's visible area of a web page. It varies with the device - 
+        it will be smaller on a mobile phone than on a computer screen. -->
+        
+        <title> 
+            Login Page
+        </title>
+
+        <style>
+            *{
+                margin: 10px;
+                background-color: #4dffa6;
+                color: #003333;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            
+            .heading{
+                margin: 10px;
+                text-align: center;
+            }
+            
+            .form1 {
+                display: flex;
+                font-size: 24px;
+                border: 2px solid #003333;
+                border-radius: 50px;
+                width: 750px;
+                height: 85vh;
+                line-height: 1.5;
+                align-items: center;
+                align-self: center;
+                text-align: left;
+                margin-left: 300px;
+            }
+
+            .container{
+                display: flex;
+                flex-wrap: wrap; 
+            }
+
+            input[type=text], input[type=password] {
+                width: 90%;
+                padding: 12px 20px;
+                margin: px 20px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                border-radius: 5px;
+                background-color:white;
+
+            }
+
+            button {
+                background-color: #004d4d;
+                color: #99ffcc;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 95%;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            button:hover {
+            opacity: 0.7;
+            }
+
+
+
+        </style>
+    </head>
+        
+    <body>
+        <div class="heading">
+            <h1>LOGIN FORM</h1>
+        </div>
+        
+        <div class="form1">
+            <form  method="post">
+                <div>
+                    <div  style="text-align: center;">
+                        <img src="loginlogo.jpg" alt="img" width= "150px" height="90px" style="border-radius: 50px;" >
+                    </div>
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" 
+                        placeholder="Enter Username" 
+                        name="uname"
+                        id="psw" 
+                        pattern="[A-Za-z][0-9][@]" 
+                        maxlength="12"
+                        minlength="3"
+                        title="numeric, alphanumeric, alphabets texts, no special characters except @.
+                        Length: min 3 characters max 12 characters" 
+                        required>
+                    
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" 
+                        placeholder="Enter Password" 
+                        name="psw"
+                        id="psw" 
+                        pattern="[@][a-z][A-Z][0-9]" 
+                        maxlength="12"
+                        minlength="5"
+                        title="Alphanumeric, special characters except @. Length: min 5 characters max 12 characters"
+                        required>
+
+                        <br>
+
+                        <button type="submit" style=" width: 150px; padding: 10px 18px; margin-left: 10px;">Login</button>
+                      
+                        
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Keep Me Signed In
+                        </label>
+                      </div>
+                </div>
+            </form>
+
+        </div>
+
+    </body>
+<html>
