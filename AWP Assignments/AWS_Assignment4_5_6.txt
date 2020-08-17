@@ -1,0 +1,174 @@
+HTML
+------==================================================================================================================
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+		
+	</script>
+
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="a">
+            <div class="x ">
+                <div style="justify-content: center;align-items: center; display: flex;">
+				<img height="200px" width=" 200px" src="loginlogo.jpg " alt="profile_pic " style=""></div>
+            </div>
+            <div class="y ">
+                <div class="p ">
+                    <div class="aa ">
+                        <h1 class="h22 ">Vaishnavi Maggidwar</h1>
+                    </div>
+					
+                    <div class="bb ">
+					<i class='fas fa-download' style='font-size:48px;color:rgb(88, 211, 88)'>
+					</i>
+                    </div>
+                </div>
+				
+                <div class="q ">
+                    <div class="cc ">
+                        <p class="p22 ">Software Dev and IT Engineer</p>
+                    </div>
+                    <div class="dd "><i class='fab fa-linkedin' style='font-size:48px;color:#33B0FF '></i></div>
+                </div>
+				
+                <div class="r ">
+                    <div style="flex: 1; background-color: blueviolet;justify-content: center;align-items: center;display: flex; "><i class='fab fa-angular' style='font-size:48px;color:black'></i>
+                    </div>
+                    <div style="flex: 1;background-color: lawngreen;justify-content: center;align-items: center;display: flex; "><i class='fab fa-aws' style='font-size:48px'></i></div>
+                    <div style="flex: 1;background-color: cadetblue;justify-content: center;align-items: center;display: flex; "><i class='fab fa-css3-alt' style='font-size:48px'></i></div>
+                    <div style="flex: 1;background-color: yellow;justify-content: center;align-items: center;display: flex; "><i class='fas fa-database' style='font-size:48px'></i></div>
+                    <div style="flex: 1;background-color: honeydew;justify-content: center;align-items: center;display: flex; "><i class='fab fa-html5' style='font-size:48px;color:red'></i></div>
+                    <div style="flex: 1;background-color: mediumaquamarine;justify-content: center;align-items: center;display: flex; "><i class='fab fa-github' style='font-size:48px'></i></div>
+                </div>
+				
+            </div>
+
+        </div>
+
+        <div class="b ">
+            <div class="k ">
+                <div class="ee ">
+                    <h1 class="h11 ">DETAILS about me</h1>
+                </div>
+				
+                <div class=" ff ">
+                    <div class="gg ">
+                        <div>
+                            <h3 style="margin-right:140px; ">About me</h3>
+                        </div>
+                        <div style="width: 70%; justify-content: center; align-items: center;font-size: 15px;  ">I am a hardworking and motivated person and i have strengthened my skills in the enviornment of cdac thus enabling me to increase my productivity and performance.</div>
+                    </div>
+					
+                    <div class="hh ">
+                        <div>
+                            <h3 style="margin-right: 60px; ">Career Objective</h3>
+                        </div>
+                        <div style="width:70%;margin:5px; justify-content: center; align-items: center; font-size: 15px; ">Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.</div>
+                    </div>
+					
+                    <div class="ii ">
+                        <div>
+                            <h3 style="margin-right:30px; ">Intrested In</h3>
+                        </div>
+                        <div style="width:70%;margin:5px;justify-content: center; align-items: center;font-size: 15px; ">Interested in database tecnology and front end job and be in a proffessional work space enviornment.</div>
+                    </div>
+					
+                </div>
+				
+            </div>
+			
+            <div class="l ">
+                <h2>Personal Info</h2>
+                <p>Name : Vaishnavi Maggidwar</p>
+                <p>Birthdate : 07/02/1997</p>
+                <p>Address : Nagpur</p>
+                <p>Phone : 123456789</p>
+            </div>
+			
+        </div>
+		
+        <div class="c ">
+            <div class="f ">
+                <h3>
+                    <center>Professional skills and hobbies</center>
+                </h3>
+				
+                <div>
+                    <ul>Microsoft office</ul>
+                    <ul>HTML & CSS</ul>
+					<ul>C & CPP</ul>
+                    <ul>Sports</ul>
+                </div>
+
+            </div>
+			
+            <div class="g ">
+                <ul>
+                    <h3>
+                        <center>Work Experience</center>
+                    </h3>
+                    <li>Software Dev
+                    <li>Internship for 6 months in ANV Infotech</li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
+
+JSRIPT
+--------------------=============================================================================================================================================
+ 
+var count = 0;
+
+		function likehere() {
+			let likeCount = document.querySelector("#like");
+
+			count++;
+
+			likeCount.innerHTML = count + "L"
+
+		}
+
+		function dislikehere() {
+			let likeCount = document.querySelector("#dislike");
+
+			count++;
+
+			likeCount.innerHTML = count + "DL"
+
+		}
+
+
+
+
+		function commenthere() {
+
+
+			let inputval = document.querySelector("#input1").value;
+			let cloneValue = document.querySelector("#placement").cloneNode(true);
+			cloneValue.innerHTML = inputval;
+
+			let commentdiv = document.querySelector("#commentdiv");
+
+			commentdiv.insertBefore(cloneValue, commentdiv.firstChild)
+		}
+
